@@ -3,7 +3,7 @@ import argparse
 import utils
 
 import wandb
-wandb.init(project="conv-nets")
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--nets', type=str, required=True)
@@ -13,6 +13,7 @@ parser.add_argument('--epochs', type=int, default=100)
 args = parser.parse_args()
 
 print(args)
+wandb.init(project="conv-nets", name=args.nets.lower())
 
 model = utils.choose_nets(args.nets)
 
@@ -39,7 +40,7 @@ test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(
     name='test_accuracy')
 
 
-# @tf.function
+@tf.function
 def train_step(images, labels):
     with tf.GradientTape() as tape:
         predictions = model(images, training=True)
@@ -51,7 +52,7 @@ def train_step(images, labels):
     train_accuracy(labels, predictions)
 
 
-# @tf.function
+@tf.function
 def test_step(images, labels):
     predictions = model(images)
     t_loss = loss_object(labels, predictions)
