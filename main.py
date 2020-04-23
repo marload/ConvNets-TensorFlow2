@@ -2,8 +2,10 @@ import tensorflow as tf
 import argparse
 import utils
 
-import wandb
+# import wandb
 
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--nets', type=str, required=True)
@@ -13,11 +15,11 @@ parser.add_argument('--epochs', type=int, default=100)
 args = parser.parse_args()
 
 print(args)
-wandb.init(project="conv-nets", name=args.nets.lower())
+# wandb.init(project="conv-nets", name=args.nets.lower())
 
 model = utils.choose_nets(args.nets)
 
-cifar100 = tf.keras.datasets.cifar100
+cifar100 = tf.keras.datasets.cifar10
 
 (x_train, y_train), (x_test, y_test) = cifar100.load_data()
 x_train, x_test = x_train / 255.0, x_test / 255.0
@@ -40,7 +42,7 @@ test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(
     name='test_accuracy')
 
 
-@tf.function
+# @tf.function
 def train_step(images, labels):
     with tf.GradientTape() as tape:
         predictions = model(images, training=True)
@@ -52,7 +54,7 @@ def train_step(images, labels):
     train_accuracy(labels, predictions)
 
 
-@tf.function
+# @tf.function
 def test_step(images, labels):
     predictions = model(images)
     t_loss = loss_object(labels, predictions)
@@ -75,12 +77,12 @@ for epoch in range(args.epochs):
                           train_accuracy.result()*100,
                           test_loss.result(),
                           test_accuracy.result()*100))
-    wandb.log({
-        "TrainLoss": train_loss.result(),
-        "TestLoss": test_loss.result(),
-        "TrainAcc": train_accuracy.result()*100,
-        "TestAcc": test_accuracy.result()*100
-    })
+    # wandb.log({
+    #     "TrainLoss": train_loss.result(),
+    #     "TestLoss": test_loss.result(),
+    #     "TrainAcc": train_accuracy.result()*100,
+    #     "TestAcc": test_accuracy.result()*100
+    # })
     train_loss.reset_states()
     test_loss.reset_states()
     train_accuracy.reset_states()
