@@ -2,6 +2,9 @@ import tensorflow as tf
 import argparse
 import utils
 
+import wandb
+wandb.init(project="conv-nets")
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--nets', type=str, required=True)
 parser.add_argument('--batch_size', type=int, default=32)
@@ -71,3 +74,13 @@ for epoch in range(args.epochs):
                           train_accuracy.result()*100,
                           test_loss.result(),
                           test_accuracy.result()*100))
+    wandb.log({
+        "TrainLoss": train_loss.result(),
+        "TestLoss": test_loss.result(),
+        "TrainAcc": train_accuracy.result()*100,
+        "TestAcc": test_accuracy.result()*100
+    })
+    train_loss.reset_states()
+    test_loss.reset_states()
+    train_accuracy.reset_states()
+    test_accuracy.reset_states()

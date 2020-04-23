@@ -85,5 +85,5 @@ class GoogleNet(Model):
         return x
 
 
-def googlenet(num_classes):
+def GoogLeNet(num_classes):
     return GoogleNet(num_classes)

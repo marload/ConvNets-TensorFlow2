@@ -88,5 +88,5 @@ class MobileNetV2(Model):
         return x
 
 
-def mobilenetv2(num_classes):
+def MobileNetV2(num_classes):
     return MobileNetV2(num_classes)

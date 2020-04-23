@@ -46,17 +46,17 @@ def make_layers(cfg):
     return Sequential(nets)
 
 
-def vgg11(num_classes):
+def VGG11(num_classes):
     return VGG(make_layers(cfg['A']), num_classes)
 
 
-def vgg13(num_classes):
+def VGG13(num_classes):
     return VGG(make_layers(cfg['B']), num_classes)
 
 
-def vgg16(num_classes):
+def VGG16(num_classes):
     return VGG(make_layers(cfg['D']), num_classes)
 
 
-def vgg19(num_classes):
+def VGG19(num_classes):
     return VGG(make_layers(cfg['E']), num_classes)

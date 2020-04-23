@@ -114,5 +114,5 @@ class MobileNet(Model):
         return x
 
 
-def mobilenet(num_classes):
+def MobileNet(num_classes):
     return MobileNet(num_classes, 1)
