@@ -1,1 +1,1 @@
-# conv-nets-tensorflow2
+# TensorFLow2 ConvNets
