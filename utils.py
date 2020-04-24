@@ -34,11 +34,11 @@ def choose_nets(nets_name, num_classes=100):
         from models.InceptionV3 import inceptionv3
         return inceptionv3(num_classes)
     if nets_name == 'mobilenet':
-        from models.MobileNet import MobileNet
-        return MobileNet(num_classes)
+        from models.MobileNet import mobilenet
+        return mobilenet(num_classes)
     if nets_name == 'mobilenetv2':
-        from models.MobileNetV2 import MobileNetV2
-        return MobileNetV2(num_classes)
+        from models.MobileNetV2 import mobilenetv2
+        return mobilenetv2(num_classes)
     if nets_name == 'seresnet18':
         from models.SEResNet import seresnet18
         return seresnet18(num_classes)
@@ -66,4 +66,13 @@ def choose_nets(nets_name, num_classes=100):
     if nets_name == 'densenet121':
         from models.DenseNet import densenet161
         return densenet161(num_classes)
+    if nets_name == 'squeezenet':
+        from models.SqueezeNet import squeezenet
+        return squeezenet(num_classes)
+    if nets_name == 'inceptionv4':
+        from models.InceptionV4 import inceptionv4
+        return inceptionv4(num_classes)
+    if nets_name == 'inception-resnet-v2':
+        from models.InceptionV4 import inception_resnet_v2
+        return inception_resnet_v2(num_classes)
     raise NotImplementedError

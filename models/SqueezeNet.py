@@ -10,7 +10,7 @@ class Fire(layers.Layer):
             layers.ReLU()
         ])
         self.expand_1x1 = Sequential([
-            layers.Conv2D(squeeze_channel, int(out_channels / 2), 1),
+            layers.Conv2D(int(out_channels / 2), (1, 1)),
             layers.BatchNormalization(),
             layers.ReLU()
         ])
@@ -31,24 +31,40 @@ class Fire(layers.Layer):
     
 
 class SqueezeNet(Model):
-    def __init__(self, num_classes):
+    def __init__(self, num_classes, input_shape=(32, 32, 3)):
         super(SqueezeNet, self).__init__()
         self.stem = Sequential([
+            layers.Input(input_shape),
             layers.Conv2D(96, (3, 3), padding='same'),
             layers.BatchNormalization(),
             layers.ReLU(),
             layers.MaxPooling2D((2, 2), strides=2)
         ])
+        self.fire = Sequential([
+            Fire(128, 16),
+            Fire(128, 16),
+            Fire(256, 32),
+            Fire(256, 32),
+            Fire(384, 48),
+            Fire(384, 48),
+            Fire(512, 64),
+            Fire(512, 64)
+        ])
+        self.conv = layers.Conv2D(num_classes, 1)
+        self.ap = layers.AveragePooling2D((7, 7), strides=1)
+        self.mp = layers.MaxPooling2D()
+        self.flat = layers.Flatten()
+        self.fc = layers.Dense(num_classes, activation='softmax')
+    
+    def call(self, inputs, training=False):
+        x = self.stem(inputs, training=training)
+        x = self.fire(x, training=training)
+        x = self.conv(x, training=training)
+        x = self.ap(x)
+        x = self.mp(x)
+        x = self.flat(x)
+        x = self.fc(x)
+        return x
 
-        self.fire2 = Fire(128, 16)
-        self.fire3 = Fire(128, 16)
-        self.fire4 = Fire(256, 32)
-        self.fire5 = Fire(256, 32)
-        self.fire6 = Fire(384, 48)
-        self.fire7 = Fire(384, 48)
-        self.fire8 = Fire(512, 64)
-        self.fire9 = Fire(512, 64)
-
-        self.conv10 = layers.Conv2D(num_classes, 1)
-        self.gap = layers.GlobalAveragePooling2D()
-        
+def squeezenet(num_classes):
+    return SqueezeNet(num_classes)

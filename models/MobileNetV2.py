@@ -62,7 +62,7 @@ class MobileNetV2(Model):
                                    kernel_size=(1, 1),
                                    strides=1,
                                    padding="same")
-        self.gap = layers.GlobalAveragePooling2D()
+        self.ap = layers.AveragePooling2D((7, 7))
         self.fc = layers.Dense(num_classes, activation='softmax')
     def _make_stage(self, repeat, in_channels, out_channels, strides, t):
         nets = Sequential()
@@ -83,10 +83,11 @@ class MobileNetV2(Model):
         x = self.stage6(x)
         x = self.stage7(x)
         x = self.conv1(x)
-        x = self.gap(x)
+        x = self.ap(x)
+        x = tf.reshape(x, (x.shape[0], -1))
         x = self.fc(x)
         return x
 
 
-def MobileNetV2(num_classes):
+def mobilenetv2(num_classes):
     return MobileNetV2(num_classes)

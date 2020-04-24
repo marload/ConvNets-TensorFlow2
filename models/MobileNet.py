@@ -100,7 +100,8 @@ class MobileNet(Model):
                                    depth_multiplier=alpha,
                                    activation='relu'),
         ])
-        self.gap = layers.GlobalAveragePooling2D()
+        self.ap = layers.AveragePooling2D((7, 7), strides=1)
+        self.flat = layers.Flatten()
         self.fc = layers.Dense(num_classes, activation='softmax')
 
     def call(self, inputs, training=False):
@@ -109,10 +110,11 @@ class MobileNet(Model):
         x = self.conv3(x)
         x = self.conv4(x)
         x = self.conv5(x)
-        x = self.gap(x)
+        x = self.ap(x)
+        x = self.flat(x)
         x = self.fc(x)
         return x
 
 
-def MobileNet(num_classes):
-    return MobileNet(num_classes, 1)
+def mobilenet(num_classes):
+    return MobileNet(num_classes)
