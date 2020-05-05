@@ -22,6 +22,7 @@ $ python main.py
 - [VGG](#vgg)
 - [GoogLeNet](#googlenet)
 - [ResNet](#resnet)
+- [DenseNet](#densenet)
 - [InceptionV3](#inceptionv3)
 - [InceptionV4](#inceptionv4)
 - [MobileNet](#mobilenet)
@@ -78,6 +79,23 @@ $ python main.py
 ```
 
 <hr>
+<a name='densenet'></a>
+
+### DenseNet
+
+**Paper** [Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)<br>
+**Author** Gao Huang, Zhuang Liu, Laurens van der Maaten, Kilian Q. Weinberger
+<br>
+**Code** [DenseNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/DenseNet.py)
+<br><br>
+**Model Options**
+
+```bash
+--nets {DenseNet121 or DenseNet169 or DenseNet201 or DenseNet161}
+```
+
+<hr>
+
 
 <a name='inceptionv3'></a>
 
