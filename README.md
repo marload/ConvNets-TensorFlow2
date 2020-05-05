@@ -20,7 +20,6 @@
 - [Squeezenet](#squeezenet)
 - [SENet](#senet)
 
-
 <hr>
 
 <a name='vgg'></a>
@@ -29,9 +28,10 @@
 
 **Paper** [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)<br>
 **Author** Karen Simonyan, Andrew Zissermanr<br>
-**Code** [VGG.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/VGG.py) 
+**Code** [VGG.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/VGG.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {VGG11 or VGG13 or VGG16 or VGG19}
 ```
@@ -47,6 +47,7 @@
 **Code** [GoogLeNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/GoogLeNet.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {GoogLeNet}
 ```
@@ -62,6 +63,7 @@
 **Code** [ResNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/ResNet.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {ResNet18 or ResNet34 ResNet50 ResNet101 ResNet 152}
 ```
@@ -78,6 +80,7 @@
 **Code** [InceptionV3.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/InceptionV3.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {InceptionV3}
 ```
@@ -94,6 +97,7 @@
 **Code** [InceptionV4.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/InceptionV4.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {InceptionV4}
 ```
@@ -110,6 +114,7 @@
 **Code** [MobileNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/MobileNet.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {MobileNet}
 ```
@@ -126,6 +131,7 @@
 **Code** [MobileNetV2.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/MobileNetV2.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {MobileNetV2}
 ```
@@ -142,6 +148,7 @@
 **Code** [SqueezeNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/SqueezeNet.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {SqueezeNet}
 ```
@@ -158,18 +165,12 @@
 **Code** [SEResNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/SEResNet.py)
 <br><br>
 **Model Options**
+
 ```bash
 --nets {SEResNet18 or SEResNet34 or SEResNet50 or SEResNet101 or SEResNet152}
 ```
 
 <hr>
-
-
-
-
-
-
-
 
 ## Reference
 
