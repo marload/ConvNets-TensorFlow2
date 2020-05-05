@@ -310,9 +310,9 @@ $ python main.py
 
 <hr>
 
-<a name='polynet'></a>
+<a name='pyramidnet'></a>
 
-### PolyNet
+### PyramidNet
 
 **Paper** [Deep Pyramidal Residual Networks](https://arxiv.org/abs/1610.02915)<br>
 **Author** Dongyoon Han, Jiwhan Kim, Junmo Kim
