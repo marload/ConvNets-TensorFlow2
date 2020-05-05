@@ -29,7 +29,12 @@
 
 **Paper** [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)<br>
 **Author** Karen Simonyan, Andrew Zissermanr<br>
-**Code** [VGG.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/VGG.py)
+**Code** [VGG.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/VGG.py) 
+<br><br>
+**Model Options**
+```bash
+--nets {VGG11 or VGG13 or VGG16 or VGG19}
+```
 
 <hr>
 
@@ -40,6 +45,11 @@
 **Paper** [Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842)<br>
 **Author** Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich<br>
 **Code** [GoogLeNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/GoogLeNet.py)
+<br><br>
+**Model Options**
+```bash
+--nets {GoogLeNet}
+```
 
 <hr>
 
@@ -50,6 +60,11 @@
 **Paper** [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)<br>
 **Author** Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun<br>
 **Code** [ResNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/ResNet.py)
+<br><br>
+**Model Options**
+```bash
+--nets {ResNet18 or ResNet34 ResNet50 ResNet101 ResNet 152}
+```
 
 <hr>
 
@@ -61,6 +76,11 @@
 **Author** Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna
 <br>
 **Code** [InceptionV3.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/InceptionV3.py)
+<br><br>
+**Model Options**
+```bash
+--nets {InceptionV3}
+```
 
 <hr>
 
@@ -72,6 +92,11 @@
 **Author** Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi
 <br>
 **Code** [InceptionV4.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/InceptionV4.py)
+<br><br>
+**Model Options**
+```bash
+--nets {InceptionV4}
+```
 
 <hr>
 
@@ -83,6 +108,11 @@
 **Author** Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam
 <br>
 **Code** [MobileNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/MobileNet.py)
+<br><br>
+**Model Options**
+```bash
+--nets {MobileNet}
+```
 
 <hr>
 
@@ -94,17 +124,27 @@
 **Author** Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen
 <br>
 **Code** [MobileNetV2.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/MobileNetV2.py)
+<br><br>
+**Model Options**
+```bash
+--nets {MobileNetV2}
+```
 
 <hr>
 
-<a name='mobilenetv2'></a>
+<a name='squeezenet'></a>
 
-### MobileNetV2
+### SqueezeNet
 
 **Paper** [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size](https://arxiv.org/abs/1602.07360)<br>
 **Author** Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally, Kurt Keutzer
 <br>
 **Code** [SqueezeNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/SqueezeNet.py)
+<br><br>
+**Model Options**
+```bash
+--nets {SqueezeNet}
+```
 
 <hr>
 
@@ -116,6 +156,11 @@
 **Author** Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu
 <br>
 **Code** [SEResNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/SEResNet.py)
+<br><br>
+**Model Options**
+```bash
+--nets {SEResNet18 or SEResNet34 or SEResNet50 or SEResNet101 or SEResNet152}
+```
 
 <hr>
 
