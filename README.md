@@ -208,6 +208,125 @@ $ python main.py
 
 <hr>
 
+<a name='shufflenet'></a>
+
+### ShuffleNet
+
+**Paper** [ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices](https://arxiv.org/abs/1707.01083)<br>
+**Author** Xiangyu Zhang, Xinyu Zhou, Mengxiao Lin, Jian Sun
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
+<a name='condensenet'></a>
+
+### CondenseNet
+
+**Paper** [CondenseNet: An Efficient DenseNet using Learned Group Convolutions](https://arxiv.org/abs/1711.09224)<br>
+**Author** Gao Huang, Shichen Liu, Laurens van der Maaten, Kilian Q. Weinberger
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
+<a name='xception'></a>
+
+### Xception
+
+**Paper** [Xception: Deep Learning with Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357)<br>
+**Author** François Chollet
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
+<a name='preactresnet'></a>
+
+### PreActResNet
+
+**Paper** [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027)<br>
+**Author** Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
+<a name='resattnet'></a>
+
+### ResAttNet
+
+**Paper** [Residual Attention Network for Image Classification](https://arxiv.org/abs/1704.06904)<br>
+**Author** Fei Wang, Mengqing Jiang, Chen Qian, Shuo Yang, Cheng Li, Honggang Zhang, Xiaogang Wang, Xiaoou Tang
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
+<a name='polynet'></a>
+
+### PolyNet
+
+**Paper** [PolyNet: A Pursuit of Structural Diversity in Very Deep Networks](https://arxiv.org/abs/1611.05725)<br>
+**Author** Xingcheng Zhang, Zhizhong Li, Chen Change Loy, Dahua Lin
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
+<a name='polynet'></a>
+
+### PolyNet
+
+**Paper** [Deep Pyramidal Residual Networks](https://arxiv.org/abs/1610.02915)<br>
+**Author** Dongyoon Han, Jiwhan Kim, Junmo Kim
+<br>
+**Code** Coming Soon
+<br><br>
+**Model Options**
+
+```bash
+// Coming Soon
+```
+
+<hr>
+
 ## Reference
 
 - https://github.com/weiaicunzai/pytorch-cifar100
