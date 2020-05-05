@@ -29,6 +29,15 @@ $ python main.py
 - [MobileNetV2](#mobilenetv2)
 - [Squeezenet](#squeezenet)
 - [SENet](#senet)
+- [ShuffleNet](#shufflenet)
+- [CondenseNet](#condenseNet)
+- [Xcention](#xception)
+- [PreActResNet](#preactresnet)
+- [ResAttNet](#resattnet)
+- [ResNeXt](#resnext)
+- [PolyNet](#polynet)
+- [PyramidNet](#pyramidnet)
+
 
 <hr>
 
