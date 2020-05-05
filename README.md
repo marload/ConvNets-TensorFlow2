@@ -8,6 +8,15 @@
 
 [ConvNets-TensorFlow2](https://github.com/marload/ConvNetsRL-TensorFlow2) is a repository that implements a variety of popular Deep Convolutional Network Architectures using [TensorFlow2](https://tensorflow.org). The core of this repository is intuitive code and concise architecture. If you are a user of TensorFlow2 and want to study various and popular CNN architectures, this repository will be the best choice to study. ConvNets-TensorFlow2 is continuously updated and managed. This repository has been very much influenced by [Cifar100-pytorch](https://github.com/weiaicunzai/pytorch-cifar100).
 
+## Usage
+```bash
+$ python main.py 
+    --nets={NETS} 
+    --batch_size={BATCH_SIZE} 
+    --lr={LEARNING_RATE} 
+    --epochs={EPOCHS}
+```
+
 ## Models
 
 - [VGG](#vgg)
