@@ -21,6 +21,108 @@
 - [SENet](#senet)
 
 
+<hr>
+
+<a name='vgg'></a>
+
+### VGG
+
+**Paper** [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)<br>
+**Author** Karen Simonyan, Andrew Zissermanr<br>
+**Code** [VGG.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/VGG.py)
+
+<hr>
+
+<a name='googlenet'></a>
+
+### GoogLeNet
+
+**Paper** [Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842)<br>
+**Author** Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich<br>
+**Code** [GoogLeNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/GoogLeNet.py)
+
+<hr>
+
+<a name='resnet'></a>
+
+### ResNet
+
+**Paper** [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)<br>
+**Author** Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun<br>
+**Code** [ResNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/ResNet.py)
+
+<hr>
+
+<a name='inceptionv3'></a>
+
+### InceptionV3
+
+**Paper** [Rethinking the Inception Architecture for Computer Vision](https://arxiv.org/abs/1512.00567)<br>
+**Author** Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna
+<br>
+**Code** [InceptionV3.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/InceptionV3.py)
+
+<hr>
+
+<a name='inceptionv4'></a>
+
+### InceptionV4
+
+**Paper** [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)<br>
+**Author** Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi
+<br>
+**Code** [InceptionV4.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/InceptionV4.py)
+
+<hr>
+
+<a name='mobilenet'></a>
+
+### MobileNet
+
+**Paper** [MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861)<br>
+**Author** Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam
+<br>
+**Code** [MobileNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/MobileNet.py)
+
+<hr>
+
+<a name='mobilenetv2'></a>
+
+### MobileNetV2
+
+**Paper** [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/abs/1801.04381)<br>
+**Author** Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, Liang-Chieh Chen
+<br>
+**Code** [MobileNetV2.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/MobileNetV2.py)
+
+<hr>
+
+<a name='mobilenetv2'></a>
+
+### MobileNetV2
+
+**Paper** [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size](https://arxiv.org/abs/1602.07360)<br>
+**Author** Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally, Kurt Keutzer
+<br>
+**Code** [SqueezeNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/SqueezeNet.py)
+
+<hr>
+
+<a name='SENet'></a>
+
+### SENet
+
+**Paper** [Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507)<br>
+**Author** Jie Hu, Li Shen, Samuel Albanie, Gang Sun, Enhua Wu
+<br>
+**Code** [SEResNet.py](https://github.com/marload/ConvNets-TensorFlow2/blob/master/models/SEResNet.py)
+
+<hr>
+
+
+
+
+
 
 
 
